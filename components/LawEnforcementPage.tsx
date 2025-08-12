@@ -124,7 +124,7 @@ export const LawEnforcementPage: React.FC<LawEnforcementPageProps> = ({ onNaviga
                                 title="Dial 112 & CCTNS Integration"
                                 onClick={() => onNavigate('#/dial-112-cctns')}
                             >
-                                <p>We specialize in integrating emergency response systems (like Dial 112) with the Crime and Criminal Tracking Network & Systems (CCTNS), such as RajCop, for seamless data flow and faster, more informed responses.</p>
+                                <p>We specialize in integrating emergency response systems (like Dial 112) with the Crime and Criminal Tracking Network & Systems (CCTNS) and RajCop, for seamless data flow and faster, more informed responses.</p>
                             </SolutionCard>
                         </div>
                          <div className="animate-on-scroll" style={{'--animation-delay': '0.1s'} as React.CSSProperties}>
