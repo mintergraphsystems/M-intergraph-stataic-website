@@ -32,12 +32,15 @@ export const CloudModernizationPage: React.FC<CloudModernizationPageProps> = ({ 
         onNavigate('contact');
     };
 
-    const services = [
+     const services = [
         { icon: <BriefcaseIcon className="w-9 h-9" />, title: "Consulting Overview", path: '#/consulting-overview', description: "Get a high-level view of our strategic IT consulting and advisory services that drive business performance." },
         { icon: <CloudIcon className="w-9 h-9" />, title: "Cloud Advisory", path: '#/cloud-advisory', description: "Develop robust cloud strategies for private, public, or hybrid models to unlock business value." },
         { icon: <CpuChipIcon className="w-9 h-9" />, title: "Core Infra Optimization", path: '#/core-infra-optimization', description: "Enhance security, reduce TCO, and maximize the business value of your IT investments with our proven model." },
         { icon: <ScaleIcon className="w-9 h-9" />, title: "Capacity Planning & Advisory", path: '#/capacity-planning', description: "Ensure your infrastructure can meet changing demands, optimizing resource utilization for future growth." },
-        
+     
+       
+    ];
+
 
     return (
         <main className="bg-gray-50">
