@@ -74,12 +74,13 @@ export const Dial112CctnsPage: React.FC<Dial112CctnsPageProps> = ({ onNavigate }
                         </div>
                         <div className="relative animate-on-scroll" style={{'--animation-delay': '0.1s'} as React.CSSProperties}>
                     <!-- direct SVG (vector) -->
-<img 
-                                src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fddinews.gov.in%2Fnational%2Fnow-dial-112-your-phone-case-emergency&psig=AOvVaw2f1WbMgGZLyIVTj8jUxp7W&ust=1755078883265000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMij-8GAhY8DFQAAAAAdAAAAABAE"
-                                alt="Emergency dispatch operator working at a console"
-                                className="rounded-2xl shadow-2xl aspect-[4/3] object-cover"
-                                loading="lazy" decoding="async"
-                            />
+<img
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Emergency_telephone_number_112.svg/291px-Emergency_telephone_number_112.svg.png"
+  alt="112 emergency phone icon"
+  className="rounded-2xl shadow-2xl aspect-[4/3] object-cover"
+  loading="lazy" decoding="async"
+/>
+
 
 
 
