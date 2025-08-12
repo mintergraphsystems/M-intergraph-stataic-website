@@ -179,25 +179,31 @@ export const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) =
                             </button>
                         </form>
 
-                        <div className="mt-6 sm:mt-8 pt-4 border-t border-gray-200 text-center text-sm text-slate-500">
-                            <p>Or contact us directly:</p>
-                            <div className="mt-3 flex flex-col sm:flex-row justify-center items-center gap-3 sm:space-x-6">
-                                <a
-                                    href="mailto:contact@mintergraph.com"
-                                    className="flex items-center text-slate-600 hover:text-blue-600 transition-colors"
-                                >
-                                    <EnvelopeIcon className="h-5 w-5 mr-2" />
-                                    <span>contact@mintergraph.com</span>
-                                </a>
-                                <a
-                                    href="tel:+919599701606"
-                                    className="flex items-center text-slate-600 hover:text-blue-600 transition-colors"
-                                >
-                                    <PhoneIcon className="h-5 w-5 mr-2" />
-                                    <span>+91 9599701606</span>
-                                </a>
-                            </div>
-                        </div>
+                       <div className="mt-6 sm:mt-8 pt-4 border-t border-gray-200 text-center text-sm text-slate-500">
+    <p className="mb-4">Or contact us directly:</p>
+    <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6">
+        
+        {/* Email Card */}
+        <a
+            href="mailto:contact@mintergraph.com"
+            className="flex items-center px-4 py-2 bg-gray-50 rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:bg-blue-50 transition-all duration-200"
+        >
+            <EnvelopeIcon className="h-5 w-5 mr-2 text-blue-600" />
+            <span className="text-slate-700 text-sm sm:text-base">contact@mintergraph.com</span>
+        </a>
+
+        {/* Phone Card */}
+        <a
+            href="tel:+919599701606"
+            className="flex items-center px-4 py-2 bg-gray-50 rounded-lg border border-gray-200 shadow-sm hover:shadow-md hover:bg-blue-50 transition-all duration-200"
+        >
+            <PhoneIcon className="h-5 w-5 mr-2 text-blue-600" />
+            <span className="text-slate-700 text-sm sm:text-base">+91 9599701606</span>
+        </a>
+        
+    </div>
+</div>
+
                     </>
                 )}
             </div>
