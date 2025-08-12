@@ -123,7 +123,7 @@ export const MintergraphSystemPage: React.FC = () => {
                 <div className="absolute inset-0 bg-slate-900/60"></div>
                 <div className="relative z-10 p-8">
                     <h1 className="text-5xl sm:text-6xl lg:text-8xl font-extrabold tracking-tighter text-white text-shadow-heavy">
-                        <AnimatedHeroText text="M Intergraph Systems" />
+                        <AnimatedHeroText text="M Intergraph  Systems" />
                     </h1>
                     <p className="mt-4 text-lg md:text-xl text-blue-300 font-semibold tracking-wide animate-fade-in" style={{ animationDelay: '1s', textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
                         The Vision of Innovation
