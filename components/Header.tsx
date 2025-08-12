@@ -207,7 +207,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage, isScrol
   
   className={`text-base sm:text-lg font-medium tracking-tight whitespace-nowrap transition-colors duration-200 ${logoColor}`}
 >
- <b> M INTERGRAPH P LTD. </b>
+  M INTERGRAPH P LTD. 
 </span>
 
             </a>
