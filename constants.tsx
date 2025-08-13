@@ -35,7 +35,7 @@ export const TESTIMONIALS: Testimonial[] = [
   {
     quote: "The North Eastern Railway, Izzatnagar Division, extends its special thanks to Mr. Devesh Singh, Senior Project Engineer at M Intergraph Systems Limited, for his exceptional knowledge and problem-solving abilities. His outstanding service has played a significant role in ensuring the smooth operation of the UTS (Unreserved Ticketing System) and PRS (Passenger Reservation System).",
     author: 'Mr.Sanjeev Banerjee',
-    company: 'North Eastern Railway',Izzatnagar Division',
+    company: 'North Eastern Railway,Izzatnagar Division',
   },
   {
     quote: "M/s. M Intergraph Systems Pvt. Ltd. supplied and installed 138 Thin Clients (OEM – Thinvent) at Patna Jn. in 2021. The deployment was smooth, and all units performed reliably throughout the 3-year warranty. Highly appreciated and recommended!",
