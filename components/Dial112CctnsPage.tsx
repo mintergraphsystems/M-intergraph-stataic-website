@@ -72,16 +72,13 @@ export const Dial112CctnsPage: React.FC<Dial112CctnsPageProps> = ({ onNavigate }
                                Emergency response systems (like Dial 112) and police record systems (like CCTNS) often operate in isolation. This disconnect leads to manual data entry, delayed information access, and slower response times. Our integration platform eliminates these silos, creating a seamless flow of information.
                             </p>
                         </div>
-                       <div className="relative animate-on-scroll" style={{'--animation-delay': '0.1s'} as React.CSSProperties}>
-                          <img
-  src="images/08_06_2022-dial112_22783627.jpg"
-  alt="Emergency telephone number 112 icon"
-  className="rounded-2xl shadow-2xl aspect-[4/3] object-cover"
-  loading="lazy"
-  decoding="async"
-/>
-
-
+                        <div className="relative animate-on-scroll" style={{'--animation-delay': '0.1s'} as React.CSSProperties}>
+                            <img 
+                                src="images\dail112.jpg"
+                                alt="Emergency dispatch operator working at a console"
+                                className="rounded-2xl shadow-2xl aspect-[4/3] object-cover"
+                                loading="lazy" decoding="async"
+                            />
                         </div>
                     </div>
                 </div>
