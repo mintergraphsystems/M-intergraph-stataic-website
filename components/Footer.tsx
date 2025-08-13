@@ -45,10 +45,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <a href="#/home" onClick={(e) => handleNavClick(e, '#/home')} className="flex items-center space-x-3 mb-6">
               <MIntergraphLogo className="h-18 w-16 text-white" /> 
               <span
-  style={{ fontFamily: 'Caveat, cursive' }}
+  
   className={`className="text-2xl font-bold  font-medium text-white tracking-tight`}
 >
-  M INTERGRAPH
+ <b>M INTERGRAPH</b> 
 </span>
 
 
