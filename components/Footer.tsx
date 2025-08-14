@@ -23,7 +23,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     { label: 'Home', path: '#/home' },
     { label: 'About Us', path: '#/about' },
     { label: 'Digital Transformation', path: '#/mint-app' },
-    { label: 'Philosophy', path: '#/philosophy' },
+    { label: 'Vision', path: '#/vision' },
     { label: 'Careers', path: '#/careers' },
     { label: 'AI Finder', path: '#/home#ai-finder' },
   ];
