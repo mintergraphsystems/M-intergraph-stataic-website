@@ -15,7 +15,8 @@ import {
     LockClosedIcon,
     LightBulbIcon,
     VideoCameraIcon,
-    ChatBubbleBottomCenterTextIcon
+    ChatBubbleBottomCenterTextIcon,
+    AcademicCapIcon
 } from './IconComponents';
 
 interface HeaderProps {
@@ -109,6 +110,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage, isScrol
           { path: '#/cctv-surveillance', label: 'CCTV Surveillance & AI Monitoring', icon: <VideoCameraIcon /> },
           { path: '#/ai-agents', label: 'AI Agents & Bots', icon: <ChatBubbleBottomCenterTextIcon /> },
          { path: '#/aidc', label: 'AIDC(Automatic Identification and Data Capture)', icon:  <CpuChipIcon />},
+        { path: '#/research-analytics', label: 'Research & Analytics Tools', icon: <AcademicCapIcon /> },
 
         ]
       },
@@ -135,7 +137,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage, isScrol
     if (aboutUsPages.includes(currentPageName) && linkPageName === 'about') {
         isActive = true;
     }
-    if (digitalTransformationPages.includes(currentPageName) && linkPageName === 'mint-app') {
+    if (digitalTransformationPages.includes(currentPageName) && (linkPageName === 'mint-app' || linkPageName ==='research-analytics')) {
         isActive = true;
     }
     if (currentPageName === 'home' && linkPageName === 'home') {
