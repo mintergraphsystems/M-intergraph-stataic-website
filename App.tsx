@@ -54,7 +54,7 @@ import { CommandDashboardsPage } from './components/CommandDashboardsPage';
 import { CctvSurveillancePage } from './components/CctvSurveillancePage';
 import { AiAgentsPage } from './components/AiAgentsPage';
 import { AidcPage } from './components/AidcPage';
-
+import { ResearchAndAnalyticsPage } from './components/ResearchAndAnalyticsPage';
 
 class ErrorBoundary extends React.Component<React.PropsWithChildren<{}>, { hasError: boolean }> {
   constructor(props: React.PropsWithChildren<{}>) {
@@ -224,6 +224,9 @@ function App(): React.ReactNode {
          case 'aidc':
   pageComponent = <AidcPage onNavigate={navigate} />;
   break;
+     case 'research-analytics':
+        pageComponent = <ResearchAndAnalyticsPage onNavigate={navigate} />;
+        break;
 
 
       // About Pages
