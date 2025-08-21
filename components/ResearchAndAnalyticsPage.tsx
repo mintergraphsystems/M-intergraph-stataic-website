@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import {
     AcademicCapIcon,
@@ -14,39 +15,47 @@ interface ResearchAndAnalyticsPageProps {
 
 const products = {
     researchAnalytics: [
-        { name: 'Maple', overview: 'A powerful symbolic and numeric computing tool for mathematics, engineering, data analysis, and algorithm development.', useCases: 'Ideal for R&D teams, universities, and engineering firms needing advanced calculus, linear algebra, differential equations, and modeling capabilities.', edge: 'Support includes integration, license management, training, and custom math-driven solutions.' },
-        { name: 'MapleSim', overview: 'A high-performance modeling and simulation platform built atop Maple, excellent for designing and validating multi-domain engineering systems.', useCases: 'Automotive, aerospace, robotics, and industrial automation sectors needing system-level modeling, real-time simulation, and code generation.', edge: 'Deliver sensor/actuator modeling, simulation workflows, and deployment across target systems.' },
-        { name: 'ATLAS.ti', overview: 'A leading qualitative data analysis (QDA) tool that facilitates coding and interpreting datasets like interviews, video, and documents.', useCases: 'Researchers, social scientists, market analysts, and academic institutions conducting in-depth qualitative research.', edge: 'Licensing, onboarding, methodology support, and consulting to elevate analytical quality.' },
-        { name: 'SmartPLS', overview: 'A visual software to perform Structural Equation Modeling (SEM) using Partial Least Squares (PLS) methodology.', useCases: 'Academic researchers, market analysts, and social scientists analyzing complex causal models.', edge: 'Training in PLS-SEM, model validation, output interpretation, and integration with broader business analytics workflows.' },
-        { name: 'IBM SPSS', overview: 'A premier statistical software suite for data analysis, predictive analytics, and machine learning.', useCases: 'Market research, survey analysis, academic research, consumer insights, and social science studies.', edge: 'Subscription-based delivery, customized deployment, hands-on training, analytics consulting, and workflow integration with Python or R.' },
-        { name: 'MAXQDA', overview: 'A versatile QDA tool for both qualitative and mixed-method research with timeline, mapping, and visualization tools.', useCases: 'Academic research, user experience studies, and professional investigations.', edge: 'Implementation support, multidisciplinary training, advanced feature enablement, and tailored advisory services.' },
-        { name: 'EPPI-Reviewer', overview: 'A specialized tool for systematic reviews—managing literature, coding, data extraction, and synthesis.', useCases: 'Healthcare, policy research, literature reviews, and evidence synthesis projects.', edge: 'Subscription licensing, structured onboarding, methodology consulting, and hands-on assistance through review stages.' },
+        { name: 'Maple', imageUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=400&auto=format&fit=crop', overview: 'A powerful symbolic and numeric computing tool for mathematics, engineering, data analysis, and algorithm development.', useCases: 'Ideal for R&D teams, universities, and engineering firms needing advanced calculus, linear algebra, differential equations, and modeling capabilities.', edge: 'Support includes integration, license management, training, and custom math-driven solutions.' },
+        { name: 'MapleSim', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5hJRNfightQBYMvEe0LbdSkz6_SrDXCWkZA&s', overview: 'A high-performance modeling and simulation platform built atop Maple, excellent for designing and validating multi-domain engineering systems.', useCases: 'Automotive, aerospace, robotics, and industrial automation sectors needing system-level modeling, real-time simulation, and code generation.', edge: 'Deliver sensor/actuator modeling, simulation workflows, and deployment across target systems.' },
+        { name: 'ATLAS.ti', imageUrl: 'https://images.unsplash.com/photo-1556740758-90de374c12ad?q=80&w=400&auto=format&fit=crop', overview: 'A leading qualitative data analysis (QDA) tool that facilitates coding and interpreting datasets like interviews, video, and documents.', useCases: 'Researchers, social scientists, market analysts, and academic institutions conducting in-depth qualitative research.', edge: 'Licensing, onboarding, methodology support, and consulting to elevate analytical quality.' },
+        { name: 'SmartPLS', imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=400&auto=format&fit=crop', overview: 'A visual software to perform Structural Equation Modeling (SEM) using Partial Least Squares (PLS) methodology.', useCases: 'Academic researchers, market analysts, and social scientists analyzing complex causal models.', edge: 'Training in PLS-SEM, model validation, output interpretation, and integration with broader business analytics workflows.' },
+        { name: 'IBM SPSS', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKA0gZPkm8FqfHsrILh4WvoAN4Q5IT5DebKg&s', overview: 'A premier statistical software suite for data analysis, predictive analytics, and machine learning.', useCases: 'Market research, survey analysis, academic research, consumer insights, and social science studies.', edge: 'Subscription-based delivery, customized deployment, hands-on training, analytics consulting, and workflow integration with Python or R.' },
+        { name: 'MAXQDA', imageUrl: 'https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=400&auto=format&fit=crop', overview: 'A versatile QDA tool for both qualitative and mixed-method research with timeline, mapping, and visualization tools.', useCases: 'Academic research, user experience studies, and professional investigations.', edge: 'Implementation support, multidisciplinary training, advanced feature enablement, and tailored advisory services.' },
+        { name: 'EPPI-Reviewer', imageUrl: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?q=80&w=400&auto=format&fit=crop', overview: 'A specialized tool for systematic reviews—managing literature, coding, data extraction, and synthesis.', useCases: 'Healthcare, policy research, literature reviews, and evidence synthesis projects.', edge: 'Subscription licensing, structured onboarding, methodology consulting, and hands-on assistance through review stages.' },
     ],
     enterpriseEcosystems: [
-        { name: 'Microsoft Azure, Microsoft 365 & Power BI', overview: '• Azure: Cloud computing for scalable infrastructure, data storage, and AI services.\n• Microsoft 365: Productivity tools including Word, Excel, Teams, and Outlook.\n• Power BI: Enterprise-grade business intelligence and data visualization platform.', useCases: 'Modernize IT infrastructure, enhance team collaboration, enable data-driven decision-making.', edge: 'End-to-end Azure migration, 365 adoption, BI dashboard development, data integration, governance, and change management consulting.' },
-        { name: 'IBM (Complete Suite)', overview: 'Broad portfolio including AI, enterprise analytics, hybrid cloud, cybersecurity, and enterprise software.', useCases: 'Transformation initiatives in sectors like finance, healthcare, manufacturing, and logistics.', edge: 'System integration for IBM platforms (e.g., Cloud Pak, Watson, Db2, Maximo), tailored architecture, license management, training, and managed services.' }
+        { name: 'Microsoft Azure, Microsoft 365 & Power BI', imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfvCXJJ_kCx-XXHYNP_bM3RocmAlIYZ2xxT4Srqmt70GCfdJdh9spafpJnMLqRCRyCpUQ&usqp=CAU', overview: '• Azure: Cloud computing for scalable infrastructure, data storage, and AI services.\n• Microsoft 365: Productivity tools including Word, Excel, Teams, and Outlook.\n• Power BI: Enterprise-grade business intelligence and data visualization platform.', useCases: 'Modernize IT infrastructure, enhance team collaboration, enable data-driven decision-making.', edge: 'End-to-end Azure migration, 365 adoption, BI dashboard development, data integration, governance, and change management consulting.' },
+        { name: 'IBM (Complete Suite)', imageUrl: 'https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=400&auto=format&fit=crop', overview: 'Broad portfolio including AI, enterprise analytics, hybrid cloud, cybersecurity, and enterprise software.', useCases: 'Transformation initiatives in sectors like finance, healthcare, manufacturing, and logistics.', edge: 'System integration for IBM platforms (e.g., Cloud Pak, Watson, Db2, Maximo), tailored architecture, license management, training, and managed services.' }
     ]
 };
 
-const ProductCard: React.FC<{product: typeof products.researchAnalytics[0]}> = ({ product }) => (
-    <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col">
-        <h3 className="text-2xl font-bold text-slate-900">{product.name}</h3>
-        <div className="mt-4 text-slate-600 text-base leading-relaxed space-y-4 flex-grow">
-            <div>
-                <h4 className="font-semibold text-slate-800">Overview:</h4>
-                <p className="whitespace-pre-line">{product.overview}</p>
-            </div>
-            <div>
-                <h4 className="font-semibold text-slate-800">Use Cases:</h4>
-                <p>{product.useCases}</p>
-            </div>
-            <div className="bg-blue-50 p-4 rounded-lg border border-blue-200 mt-auto">
-                <h4 className="font-semibold text-blue-800">Your Edge with M Intergraph:</h4>
-                <p className="text-blue-700">{product.edge}</p>
+type ProductType = (typeof products.researchAnalytics[0] | typeof products.enterpriseEcosystems[0]) & { imageUrl?: string };
+
+const ProductCard: React.FC<{product: ProductType}> = ({ product }) => (
+    <div className="bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 h-full flex flex-col overflow-hidden">
+        {product.imageUrl && (
+            <img src={product.imageUrl} alt={`${product.name} visual representation`} className="w-full h-40 object-cover" />
+        )}
+        <div className={`flex flex-col flex-grow ${product.imageUrl ? 'p-6' : 'p-8'}`}>
+            <h3 className="text-2xl font-bold text-slate-900">{product.name}</h3>
+            <div className="mt-4 text-slate-600 text-base leading-relaxed space-y-4 flex-grow">
+                <div>
+                    <h4 className="font-semibold text-slate-800">Overview:</h4>
+                    <p className="whitespace-pre-line">{product.overview}</p>
+                </div>
+                <div>
+                    <h4 className="font-semibold text-slate-800">Use Cases:</h4>
+                    <p>{product.useCases}</p>
+                </div>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200 mt-auto">
+                    <h4 className="font-semibold text-blue-800">Your Edge with M Intergraph:</h4>
+                    <p className="text-blue-700">{product.edge}</p>
+                </div>
             </div>
         </div>
     </div>
 );
+
 
 const WhyChooseUsItem: React.FC<{ children: React.ReactNode }> = ({ children }) => (
      <li className="flex items-start">
